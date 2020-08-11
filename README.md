@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+## Andres Leon Personal Page
 
-You can use the [editor on GitHub](https://github.com/aleon1220/aleon1220.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Personal Page Andres Leon Rangel Born in Colombia
+grew up in Socorro Santander, Colombia
+moved to Bogota, Colombia
+Finished High School in Sheldon, Illinois, USA
+Enjoyed India
+God moved me to New Zealand
+Adopted by Kiwis.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### About Me
+Servant of God masquerading as a DevOps Engineer
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Professional Profile
+Migrated from [PasteBin.com](https://pastebin.com/raw/K8qm2NqZ)
+--javaScript latest frameworks
+https://aleon1220.github.io/IoT-Enabled-BPMN-Editor/
 
-```markdown
-Syntax highlighted code block
+--JAVA J2EE--
+https://github.com/aleon1220/multi-cloud-AttendWebApp
+https://github.com/aleon1220/BuffetAbogadosWebAppProject
+https://github.com/aleon1220/J2EE-EmployeeManagement_404376
 
-# Header 1
-## Header 2
-### Header 3
+--Web development--
+	http://cncinternational.org/
+	https://easyasweb.co.nz/#work
+	https://www.imcolonline.com/
 
-- Bulleted
-- List
+--Uni project multicloud environment
+https://tinyurl.com/SOA-MCLOUD
 
-1. Numbered
-2. List
+--System integration and design--
+1.	TIBCO ESB Online Video tutorials in Spanish
+	https://www.youtube.com/playlist?list=PLYKl7T_I63IsJWCQYzJg1WFD10CoxglII 
+2.	Data Analysis tutorial with Spotfire
+	https://youtu.be/NkRo1r_r7OQ?list=PLYKl7T_I63IuU6nPDhm2dmuLqzYCDLRhc
+	www.tinyurl.com/AleonAnalyticsReport
 
-**Bold** and _Italic_ and `Code` text
+--2016 Process Automation
+1.	Private Cloud: Landing Page with SSL domain in Apache Server
+	https://www.imcolonline.com/
+4.	BPM Platform configured and securely exposed in internet. The first one in Colombia.
+	https://www.imcolonline.com/p/openspace/openspace.html 
+5.	Analytics Platform configured and securely exposed in internet. First Integrated environment in Colombia.
+	https://www.imcolonline.com/spotfire/
+	operador/Imco*
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/aleon1220/aleon1220.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+--Personal project--
+Maintenance and development of bilingual website with common questions for students coming to New Zealand: www.NZFAQ.cf
