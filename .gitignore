@@ -1,2 +1,4 @@
 .DS_Store
 vendor/
+_site/CNAME
+_site/README.md

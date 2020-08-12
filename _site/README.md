@@ -1,41 +1,51 @@
-# PanelCV
-2020-08-01
-Customization of original work by aleon1220. I will customize it for my needs.
-Once main goal is to add a timeline. The timeline will show the different experience and highlight throughout my career.
+## Andres Leon Personal Page
 
-This theme is designed by [flexycodex](https://themeforest.net/item/flexyvcard-responsive-vcard-template-/7158750) and modified by [Locky](https://github.com/junlulocky)
-The original name of this  Jekyll static site is PanelCV. References below.
+Personal Page Andres Leon Rangel Born in Colombia
+grew up in Socorro Santander, Colombia
+moved to Bogota, Colombia
+Finished High School in Sheldon, Illinois, USA
+Enjoyed India
+God moved me to New Zealand
+Adopted by Kiwis.
 
-I have made this into a Jekyll Theme. Demo: [https://jekyller.github.io/PanelCV](https://jekyller.github.io/PanelCV)
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-The theme would look like this 
+### About Me
+Servant of God masquerading as a DevOps Engineer
 
-![Demo](/images/demo.png)
+### Professional Profile
+Migrated from [PasteBin.com](https://pastebin.com/raw/K8qm2NqZ)
+--javaScript latest frameworks
+https://aleon1220.github.io/IoT-Enabled-BPMN-Editor/
 
+--JAVA J2EE--
+https://github.com/aleon1220/multi-cloud-AttendWebApp
+https://github.com/aleon1220/BuffetAbogadosWebAppProject
+https://github.com/aleon1220/J2EE-EmployeeManagement_404376
 
-# Installation
+--Web development--
+	http://cncinternational.org/
+	https://easyasweb.co.nz/#work
+	https://www.imcolonline.com/
 
-- Fork the repository
-- Go to settings and set Github Pages source as master.
-- Your new site should be ready at https://username.github.io/PanelCV/
+--Uni project multicloud environment
+https://tinyurl.com/SOA-MCLOUD
 
-Check out for more themes: [Jekyll Themes](http://jekylltheme.org)
+--System integration and design--
+1.	TIBCO ESB Online Video tutorials in Spanish
+	https://www.youtube.com/playlist?list=PLYKl7T_I63IsJWCQYzJg1WFD10CoxglII 
+2.	Data Analysis tutorial with Spotfire
+	https://youtu.be/NkRo1r_r7OQ?list=PLYKl7T_I63IuU6nPDhm2dmuLqzYCDLRhc
+	www.tinyurl.com/AleonAnalyticsReport
 
-# Local dev
-to run it locally i suggest you use docker. Please google the docker installation and install it.
+--2016 Process Automation
+1.	Private Cloud: Landing Page with SSL domain in Apache Server
+	https://www.imcolonline.com/
+4.	BPM Platform configured and securely exposed in internet. The first one in Colombia.
+	https://www.imcolonline.com/p/openspace/openspace.html 
+5.	Analytics Platform configured and securely exposed in internet. First Integrated environment in Colombia.
+	https://www.imcolonline.com/spotfire/
+	operador/Imco*
 
-- Pull the ruby image tagged version 3.8
-`docker pull jekyll/jekyll:3.8`
-- Build The Jekyll Page with *Docker*
-
-```docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:3.8 jekyll build```
-
-- Run a temporary container to serve the **Built Jekyll site.** pointing to the local repo where you have the code.
-
-```
-docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=development -p 4000:4000 jekyll/jekyll:3.8 jekyll serve
-```
-
-# Original Author
-- [Locky](https://github.com/junlulocky)
-- Docker commands for Ruby from [dev.to Compile a Jekyll project without installing Jekyll or Ruby by using Docker](https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184)
+--Personal project--
+Maintenance and development of bilingual website with common questions for students coming to New Zealand: www.NZFAQ.cf
