@@ -1,4 +1,4 @@
-## Andres Leon Personal Page
+# Andres Leon Personal Page
 
 Personal Page Andres Leon Rangel Born in Colombia
 grew up in Socorro Santander, Colombia
@@ -11,7 +11,32 @@ Adopted by Kiwis 2020
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site.
 
 ### About Me
-Servant of God masquerading as a DevOps Engineer
+Servant of God masquerading as a DevOps Engineer Software Developer
+
+# Test locally with Docker
+Docker makes it easy for you to test Jekyll Pages
+
+## Build Jekyll Page locally
+- make sure you have installed docker. Easy just google it. I will put [Docker installation instructions](www.docker.com)
+- go to the directory where you have the page
+- run command to build from Docker Jekyll image
+```
+docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:3.8 jekyll build
+```
+
+## Update Gemfile.lock file for more dependencies
+2020-08-26 I am not a ruby expert but i discovered a nice command to automatically update the dependencies bundle
+- run `bundle update` command
+```
+docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:3.8 bundle update
+```
+
+## Serve Page locally :-) 
+- run serve command to see the page
+```
+docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:3.8 jekyll serve
+```
+
 
 ### Professional Profile
 Migrated from [PasteBin.com](https://pastebin.com/raw/K8qm2NqZ)
