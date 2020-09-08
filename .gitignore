@@ -2,3 +2,4 @@
 vendor/
 _site/CNAME
 _site/README.md
+.jekyll-cache
