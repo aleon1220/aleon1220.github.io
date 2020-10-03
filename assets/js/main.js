@@ -143,7 +143,6 @@ jQuery(document).ready(function($) {
             });
 
         }
-
     }
 
     // On lie l'événement resize à la fonction
@@ -165,7 +164,8 @@ jQuery(document).ready(function($) {
     $contactform.submit(function() {
         $.ajax({
             type: "POST",
-            url: "php/contact.php",
+            // url: "php/contact.php",
+            url: "https://hooks.zapier.com/hooks/catch/3915745/og4209j",
             data: $(this).serialize(),
             success: function(msg)
             {
