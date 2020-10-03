@@ -148,7 +148,7 @@
             <h6>My Social Profiles</h6>
             <a href="https://github.com/aleon1220"><i class="fa fa fa-github"></i></a>
             <a href="https://www.linkedin.com/in/aleon1220/"><i class="fa fa-linkedin"></i></a>
-            <a href="https://medium.com/@aleon1220"><i class="fa fa-spinner"></i></a>
+            <a href=""><i class="fa fa-spinner"></i></a>
             <a href="https://twitter.com/aleon1220"><i class="fa fa-twitter"></i></a>
             <a href="http://www.facebook.com/aleon1220"><i class="fa fa-facebook"></i></a>
             <div class="clear"></div>
@@ -1502,10 +1502,9 @@
 
                 <div class="contact-form">
                     <!--<h3 class="main-heading"><span>Let's keep in touch</span></h3>-->
-
                     <div id="contact-status"></div>
 
-                    <form action="#" id="contactform">
+                    <form id="contactform" action="https://hooks.zapier.com/hooks/catch/3915745/og4209j/">
                         <p class="form-group" id="contact-name">
                             <label for="name">Your Name</label>
                             <input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name..." />
@@ -1522,19 +1521,21 @@
                         <input type="reset" name="reset" value="CLEAR" class="reset">
                         <!-- <input type="submit" name="submit" value="SEND MESSAGE" class="submit">-->
 
-                        <section class="button-demo" style="display: inline-block;">
-                            <button class="ladda-button submit send_email" name="submit" data-color="green" data-style="expand-left">SEND MESSAGE</button>
+                        <section class="button-demo g-recaptcha" style="display: inline-block;">
+                            <button class="ladda-button submit send_email" name="submit" data-color="green"
+                                    data-style="expand-left" data-action="submit" data-sitekey="6Lf_JNMZAAAAADwabhcg1nIldXfFspDcGfBa9e_G"
+                                    data-callback="onSubmit">SEND MESSAGE
+                            </button>
                         </section>
-
                     </form>
                 </div>
-                <!-- /Contact Form -->
+            <!-- /Contact Form -->
             </div>
         </div>
-    </div>  
-</div>                                            
+    </div>
 </div>
-    <!-- End .contact -->
+</div>
+<!-- End .contact -->
 
 </div>
 <!-- End #resp-tabs-container --> 
@@ -1728,6 +1729,14 @@
 <!-- Js | Js -->
 <!-- Credits: http://themeforest.net/user/FlexyCodes -->
 <script type="text/javascript" src="assets/js/main.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+<script>
+    function onSubmit(token) {
+      document.getElementById("contactform").submit();
+    }
+  </script>
 
 <!-- code js for image rotate -->
 <script type="text/javascript">

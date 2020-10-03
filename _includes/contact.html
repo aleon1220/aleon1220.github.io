@@ -58,10 +58,9 @@
 
                 <div class="contact-form">
                     <!--<h3 class="main-heading"><span>Let's keep in touch</span></h3>-->
-
                     <div id="contact-status"></div>
 
-                    <form action="#" id="contactform">
+                    <form id="contactform" action="https://hooks.zapier.com/hooks/catch/3915745/og4209j/">
                         <p class="form-group" id="contact-name">
                             <label for="name">Your Name</label>
                             <input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name..." />
@@ -78,16 +77,18 @@
                         <input type="reset" name="reset" value="CLEAR" class="reset">
                         <!-- <input type="submit" name="submit" value="SEND MESSAGE" class="submit">-->
 
-                        <section class="button-demo" style="display: inline-block;">
-                            <button class="ladda-button submit send_email" name="submit" data-color="green" data-style="expand-left">SEND MESSAGE</button>
+                        <section class="button-demo g-recaptcha" style="display: inline-block;">
+                            <button class="ladda-button submit send_email" name="submit" data-color="green"
+                                    data-style="expand-left" data-action="submit" data-sitekey="6Lf_JNMZAAAAADwabhcg1nIldXfFspDcGfBa9e_G"
+                                    data-callback="onSubmit">SEND MESSAGE
+                            </button>
                         </section>
-
                     </form>
                 </div>
-                <!-- /Contact Form -->
+            <!-- /Contact Form -->
             </div>
         </div>
-    </div>  
-</div>                                            
+    </div>
 </div>
-    <!-- End .contact -->
+</div>
+<!-- End .contact -->
