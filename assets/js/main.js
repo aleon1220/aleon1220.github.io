@@ -168,6 +168,7 @@ jQuery(document).ready(function($) {
             url: "https://hooks.zapier.com/hooks/catch/3915745/og4209j/",
             data: $(this).serialize(),
             success: function(msg){
+                // alert(JSON.stringify(msg, null, 4)); // DEBUG
                 var msg_error = msg.split(",");
                 var output_error = '';
 
