@@ -20,20 +20,20 @@ Docker makes it easy for you to test Jekyll Pages
 - make sure you have installed docker. Easy just google it. I will put [Docker installation instructions](www.docker.com)
 - go to the directory where you have the page
 - run command to build from Docker Jekyll image
-```
+``` bash
 docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:3.8 jekyll build
 ```
 
 ## Update Gemfile.lock file for more dependencies
 2020-08-26 I am not a ruby expert but i discovered a nice command to automatically update the dependencies bundle
 - run `bundle update` command
-```
+``` bash
 docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:3.8 bundle update
 ```
 
 ## Serve Page locally :-) 
 - run serve command to see the page
-```
+``` bash
 docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:3.8 jekyll serve
 ```
 
@@ -51,28 +51,28 @@ https://github.com/aleon1220/BuffetAbogadosWebAppProject
 https://github.com/aleon1220/J2EE-EmployeeManagement_404376
 
 - Web development Experience
-	http://cncinternational.org/
-	https://easyasweb.co.nz/#work
-	https://www.imcolonline.com/
+    http://cncinternational.org/
+    https://easyasweb.co.nz/#work
+    https://www.imcolonline.com/
 
 - University project multicloud environment
 https://tinyurl.com/SOA-MCLOUD
 
 - System integration and design
 1.	TIBCO ESB Online Video tutorials in Spanish
-	https://www.youtube.com/playlist?list=PLYKl7T_I63IsJWCQYzJg1WFD10CoxglII 
+    https://www.youtube.com/playlist?list=PLYKl7T_I63IsJWCQYzJg1WFD10CoxglII 
 2.	Data Analysis tutorial with Spotfire
-	https://youtu.be/NkRo1r_r7OQ?list=PLYKl7T_I63IuU6nPDhm2dmuLqzYCDLRhc
-	www.tinyurl.com/AleonAnalyticsReport
+    https://youtu.be/NkRo1r_r7OQ?list=PLYKl7T_I63IuU6nPDhm2dmuLqzYCDLRhc
+    www.tinyurl.com/AleonAnalyticsReport
 
 - 2016 Process Automation
 1.	Private Cloud: Landing Page with SSL domain in Apache Server
-	https://www.imcolonline.com/
+    https://www.imcolonline.com/
 4.	BPM Platform configured and securely exposed in internet. The first one in Colombia.
-	https://www.imcolonline.com/p/openspace/openspace.html 
+    https://www.imcolonline.com/p/openspace/openspace.html 
 5.	Analytics Platform configured and securely exposed in internet. First Integrated environment in Colombia.
-	https://www.imcolonline.com/spotfire/
-	operador/Imco*
+    https://www.imcolonline.com/spotfire/
+    operador/Imco*
 
 --Personal project--
 Maintenance and development of bilingual website with common questions for students coming to New Zealand: www.NZFAQ.cf
