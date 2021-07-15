@@ -18,8 +18,11 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
   - [Build Jekyll Page locally](#build-jekyll-page-locally)
   - [Update Gemfile.lock file for more dependencies](#update-gemfilelock-file-for-more-dependencies)
   - [Serve Page locally :-)](#serve-page-locally--)
+  - [Zappier integration](#zappier-integration)
+    - [Email features](#email-features)
+      - [Format HTML emails](#format-html-emails)
   - [Debugging JavaScript](#debugging-javascript)
-    - [Email](#email)
+    - [Email call on submit()](#email-call-on-submit)
 
 ## About Me
 Servant of God masquerading as a DevOps Engineer Software Developer
@@ -87,9 +90,24 @@ docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/us
 docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:3.8 jekyll serve
 ```
 
+## Zappier integration
+Zappier is used to integrate some functionalities. Zappier exposes a webhook, the webhook is invoked using JavaScript
+
+### Email features
+sending email in the contact page
+#### Format [HTML emails](https://zapier.com/help/create/email-and-text-messages/send-emails-in-zaps#common-problems-email)
+To style your email you will need to use HTML. Here's some basic quick start formatting HTML markup:
+
+``` html
+Paragraph: <p> This is a paragraph </p>
+Links: <a href="http://www.zapier.com">This is a link</a>
+Images: <img src="imageurl.jpg" alt="alt text" width="104" height="142">
+Bold: <b>This text is bold</b>
+Italic: <i>This text is italic</i>
+```
 ## Debugging JavaScript
 
-### Email
+### Email call on submit()
 A Zappier webhook should be available and is added in the main.js function.
 
 check for the ./js/main.js file
