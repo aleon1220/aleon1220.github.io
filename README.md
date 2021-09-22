@@ -13,15 +13,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
   - [Serve Page locally :-)](#serve-page-locally--)
   - [Zappier integration](#zappier-integration)
     - [Email features](#email-features)
-      - [Format HTML emails](#format-html-emails)
   - [Debugging JavaScript](#debugging-javascript)
-<<<<<<< HEAD
-    - [Email](#email)
+    - [Email call on submit()](#email-call-on-submit)
   - [Editing the Timeline at Timeline.js](#editing-the-timeline-at-timelinejs)
     - [Instructions to update the Timeline](#instructions-to-update-the-timeline)
-=======
-    - [Email call on submit()](#email-call-on-submit)
->>>>>>> b5ed5d3dc706833ac5bee4f6ee17ecb9943da40f
 
 ## About Me
 Servant of God masquerading as a DevOps Engineer Software Developer
