@@ -6,7 +6,7 @@ baseurl: '/aleon1220.github.io' # Github repository name. Required to load asset
 yourname: Andres Leon-Rangel
 title: 'DevOps Practitioner &amp; Software Engineer background'
 location: Auckland , New Zealand
-cvDownload: https://www.dropbox.com/s/3poq3t3jofawnia/CV-WWWandresNZ.pdf?dl=0
+cvDownload: https://www.dropbox.com/s/3poq3t3jofawnia/CV-WWWandresNZ.pdf?dl=0 # Try in HTML with {{site.cvDownload}}
 
 ## Social Profiles
 facebook: http://www.facebook.com/aleon1220
