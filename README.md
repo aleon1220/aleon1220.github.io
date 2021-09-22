@@ -13,6 +13,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
   - [Serve Page locally :-)](#serve-page-locally--)
   - [Debugging JavaScript](#debugging-javascript)
     - [Email](#email)
+  - [Editing the Timeline at Timeline.js](#editing-the-timeline-at-timelinejs)
+    - [Instructions to update the Timeline](#instructions-to-update-the-timeline)
 
 ## About Me
 Servant of God masquerading as a DevOps Engineer Software Developer
@@ -88,7 +90,7 @@ docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/us
 ```
 
 ## Serve Page locally :-) 
-- run `serve` to see the page locally
+- Run `serve` to see the page locally
 
 ``` bash
 docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" --env JEKYLL_ENV=production jekyll/jekyll:3.8 jekyll serve
@@ -105,3 +107,14 @@ Search for function
 ``` javascript
 $contactform.submit(function() 
 ```
+## Editing the Timeline at [Timeline.js](https://timeline.knightlab.com/)
+The third icon from top to bottom is a timelime of my professional life. It must show the development and growth over the years.
+### Instructions to update the Timeline
+Timeline JS has instructions at [Make Timeline](https://timeline.knightlab.com/#make) I find it easier to update them here.
+
+- Check the [Timeline JS Documentation](http://timeline.knightlab.com/docs/index.html)
+
+1. There is a Google sheets document with a Timeline JS template. It is published at [Aleonrangel Professional Timeline](https://docs.google.com/spreadsheets/d/e/2PACX-1vTA5gLh2-jJJFkM_L2WLx913aEpHNY0cQdCjKnRmO-iW0713mfjI3Wu1I8x-NqsRt66yjnOQomNBEpb/pubhtml)
+1. Edit the Google sheets directly and Timeline JS generates the appropriate changes.
+
+To see the Timeline go to [CDN Direct Link](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1G1b9cEH8MR9pjio6ZaprRYcIzoJhcrmAcyuUfSbZscM&font=Default&lang=en&debug=true&initial_zoom=3&height=650)
