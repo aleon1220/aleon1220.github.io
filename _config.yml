@@ -1,20 +1,20 @@
 url: 'http://www.andres.nz'
-baseurl: '/aleon1220.github.io' # Change it according to your repository name. Required to load assets
+baseurl: '/aleon1220.github.io' # Github repository name. Required to load assets
 # theme: jekyll-theme-tactile
 
 # Profile information
-yourname: Andres Leon-Rangel  ## put your name
-title: 'DevOps &amp; Software Engineer'  ## your title
+yourname: Andres Leon-Rangel
+title: 'DevOps Practitioner &amp; Software Engineer background'
 location: Auckland , New Zealand
 
 ## Social Profiles
-facebook: http://www.facebook.com/aleon1220  ## your facebook account url
-twitter: https://twitter.com/aleon1220 ## your twitter account url
-linkedin: https://www.linkedin.com/in/aleon1220/  ## your linkedin account url
-scholar: https://scholar.google.com/citations?user=sOgChXwAAAAJ&hl=en # academic google Scholar
+facebook: http://www.facebook.com/aleon1220
+twitter: https://twitter.com/aleon1220
+linkedin: https://www.linkedin.com/in/aleon1220/
+scholar: https://scholar.google.com/citations?user=sOgChXwAAAAJ&hl=en # google Scholar Academic
 blogger: https://aleonsocial.blogspot.com/
-github: https://github.com/aleon1220  ## you github account url
-medium: https://medium.com/@aleon1220  ## your medium account url
+github: https://github.com/aleon1220
+medium: https://medium.com/@aleon1220
 
 # Update all the sections by editing the files inside _includes folder.
 exclude:
