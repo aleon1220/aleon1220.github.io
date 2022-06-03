@@ -1,5 +1,5 @@
 # My Professional Work structure
-mkdir -pv \ 
+mkdir -pv \
     02-jobs 03-My-Soft-skills ansible Apache-server apple-mac Atlassian Bash-Scripting Biztalk BPM C \
     cloud-Computing containers Continuous-Integration CPP DataBases deployments-delivery Devops \
     ELK-stack EnterpriseAppIntegration fireCracker git HTTP img-logos infrastructure-as-code \
