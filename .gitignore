@@ -1,6 +1,5 @@
 # Sorted A-Z
 .DS_Store
-#_includes/_site/
 _site/
 _site/CNAME
 _site/README.md
