@@ -143,7 +143,6 @@ jQuery(document).ready(function($) {
             });
 
         }
-
     }
 
     // On lie l'événement resize à la fonction
@@ -165,10 +164,11 @@ jQuery(document).ready(function($) {
     $contactform.submit(function() {
         $.ajax({
             type: "POST",
-            url: "php/contact.php",
+            // url: "php/contact.php",
+            url: "https://hooks.zapier.com/hooks/catch/3915745/og4209j/",
             data: $(this).serialize(),
-            success: function(msg)
-            {
+            success: function(msg){
+                // alert(JSON.stringify(msg, null, 4)); // DEBUG
                 var msg_error = msg.split(",");
                 var output_error = '';
 
@@ -182,7 +182,6 @@ jQuery(document).ready(function($) {
                 }
 
                 if (msg_error.indexOf('error-email') != -1) {
-
                     $("#contact-email").addClass("has-error");
                     $("#contact-email").removeClass("has-success");
                     output_error = 'Please enter valid e-mail.';
@@ -200,14 +199,12 @@ jQuery(document).ready(function($) {
                     $("#contact-name").removeClass("has-error");
                 }
 
-
                 if (msg == 'success') {
 
                     response = '<div class="alert alert-success success-send">' +
                             '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
                             '<i class="glyphicon glyphicon-ok" style="margin-right: 5px;"></i> ' + $success
                             + '</div>';
-
 
                     $(".reset").trigger('click');
                     $("#contact-name").removeClass("has-success");
@@ -220,7 +217,6 @@ jQuery(document).ready(function($) {
                             '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
                             '<i class="glyphicon glyphicon-remove" style="margin-right: 5px;"></i> ' + output_error
                             + '</div>';
-
                 }
                 // Hide any previous response text
                 $(".error-send,.success-send").remove();
@@ -234,7 +230,6 @@ jQuery(document).ready(function($) {
     /* ---------------------------------------------------------------------- */
     /* ----------------------------- Portfolio ------------------------------ */
     /* ---------------------------------------------------------------------- */
-
 
     var filterList = {
         init: function() {
@@ -348,7 +343,7 @@ jQuery(document).ready(function($) {
 
     });
 
-    //pagination All
+    // Pagination All
     $('.content-post a').click(function() {
         var pagina = $(this).attr('href');
 
@@ -364,7 +359,7 @@ jQuery(document).ready(function($) {
 
     });
 
-    //pagination blog
+    // Pagination blog
     $('.content-post #pagination').click(function() {
 
 
@@ -390,28 +385,28 @@ jQuery(document).ready(function($) {
     /* ---------------------------------------------------------------------- */
 
     $(".resp-tabs-container h2.resp-accordion").each(function(){
-			 
-			if($(this).hasClass('resp-tab-active')){
-				$(this).append("<i class='glyphicon glyphicon-chevron-up arrow-tabs'></i>");
-			}else {
-				$(this).append("<i class='glyphicon glyphicon-chevron-down arrow-tabs'></i>");
-			}
-	  });
-	  
-	   $(".resp-tabs-container h2.resp-accordion").click(function(){
-			if($(this).hasClass('resp-tab-active')){
-				$(this).find("i.arrow-tabs").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
-			}
-			
-			$(".resp-tabs-container h2.resp-accordion").each(function(){
-		 
-				if(!$(this).hasClass('resp-tab-active')){
-					$(this).find("i.arrow-tabs").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
-				}
-		  });
-	  
-			
-	  });
+             
+            if($(this).hasClass('resp-tab-active')){
+                $(this).append("<i class='glyphicon glyphicon-chevron-up arrow-tabs'></i>");
+            }else {
+                $(this).append("<i class='glyphicon glyphicon-chevron-down arrow-tabs'></i>");
+            }
+      });
+      
+       $(".resp-tabs-container h2.resp-accordion").click(function(){
+            if($(this).hasClass('resp-tab-active')){
+                $(this).find("i.arrow-tabs").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+            }
+            
+            $(".resp-tabs-container h2.resp-accordion").each(function(){
+         
+                if(!$(this).hasClass('resp-tab-active')){
+                    $(this).find("i.arrow-tabs").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+                }
+          });
+      
+            
+      });
 
 
     /* ---------------------------------------------------------------------- */
@@ -444,23 +439,20 @@ jQuery(document).ready(function($) {
             }, 2000);
         });
     });
-	
-		
-	//Change for demo page
+    
+        
+    //Change for demo page
     $('input:radio[name=page_builder]').on('change', function() {
-		
-		$('input:radio[name=page_builder]').each(function () {
+        
+        $('input:radio[name=page_builder]').each(function () {
 
-			var $this = $(this);
-	
-			if ($(this).prop('checked')) {
-				window.location.replace($this.val());
-			}
-		});
-		
+            var $this = $(this);
+    
+            if ($(this).prop('checked')) {
+                window.location.replace($this.val());
+            }
+        });
+        
         return false;
     });
-
-
-
 });
