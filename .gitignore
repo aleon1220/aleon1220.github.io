@@ -1,7 +1,5 @@
 # Sorted A-Z
 .DS_Store
-_site/
-_site/CNAME
-_site/README.md
+_site/*
 .jekyll-cache
 vendor/
