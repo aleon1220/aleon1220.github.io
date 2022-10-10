@@ -87,7 +87,13 @@ Docker makes it easy for you to test Jekyll Pages
 
 ## Build Jekyll Page
 
-build locally
+set the version before running the build locally
+
+there is this official [builder image](https://github.com/envygeeks/jekyll-docker#readme)
+
+```bash
+VERSION="3.8.6"
+```
 
 - Install Docker. [Docker installation instructions](https://docs.docker.com/get-docker/)
 - Go to the directory where you have the source code of the site
@@ -97,10 +103,18 @@ build locally
 docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" \
 	--env VERBOSE=true \
 	--env JEKYLL_ENV=production \
-	jekyll/jekyll:3.8 jekyll build
+	jekyll/jekyll:$VERSION jekyll build
 ```
 
-## Serve Page 
+### Bundler
+
+```bash
+docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+	--env JEKYLL_ENV=production \
+	jekyll/jekyll:$VERSION jekyll bundle install
+```
+
+## Serve Page
 
 locally :-)
 
