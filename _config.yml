@@ -1,20 +1,21 @@
 url: 'http://www.andres.nz'
-baseurl: '/aleon1220.github.io' # Github repository name. Required to load assets
+baseurl: '/aleon1220.github.io' # Github repo name. Required to load assets
 # theme: jekyll-theme-tactile
 
 # Profile information
 yourname: Andres LeonRangel
-title: 'Platform Engineer - DevOps Mindset'
-location: Auckland , New Zealand
-cvDownload: https://www.dropbox.com/s/3poq3t3jofawnia/CV-WWWandresNZ.pdf?dl=0 # Try in HTML with {{site.cvDownload}}
+title: 'Platform Engineer - DevOps Culture'
+location: Auckland New Zealand
+cvDownload: https://www.dropbox.com/s/3poq3t3jofawnia/CV-WWWandresNZ.pdf?dl=0
+# HTML code for CV {{site.cvDownload}}
 
 ## Social Profiles
 blogger: https://aleonsocial.blogspot.com/
 facebook: http://www.facebook.com/aleon1220
 github: https://github.com/aleon1220
-linkedin: https://www.linkedin.com/in/aleon1220/
+linkedin: https://www.linkedin.com/in/aleonrangel/
 medium: https://medium.com/@aleon1220
-scholar: https://scholar.google.com/citations?user=sOgChXwAAAAJ&hl=en # google Scholar Academic
+scholar: https://scholar.google.com/citations?user=sOgChXwAAAAJ&hl=en # Academic
 twitter: https://twitter.com/aleon1220
 
 # Update all the sections by editing the files inside _includes folder.
