@@ -11,11 +11,16 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
     - [Professional Profile](#professional-profile)
     - [Personal project--](#personal-project--)
 - [Test this project locally with Docker](#test-this-project-locally-with-docker)
-  - [Build Jekyll Page locally](#build-jekyll-page-locally)
+  - [Build Jekyll Page](#build-jekyll-page)
+    - [Bundler](#bundler)
+  - [Serve Page](#serve-page)
+    - [Jekyll Serve](#jekyll-serve)
+    - [bundle serve](#bundle-serve)
+  - [Jekyll Commands](#jekyll-commands)
     - [Update Gemfile.lock file for more dependencies](#update-gemfilelock-file-for-more-dependencies)
-  - [Serve Page locally :-)](#serve-page-locally--)
   - [Zappier integration](#zappier-integration)
     - [Email features](#email-features)
+      - [Format HTML emails](#format-html-emails)
   - [Debugging JavaScript](#debugging-javascript)
     - [Email call on submit()](#email-call-on-submit)
   - [Editing the Timeline at Timeline.js](#editing-the-timeline-at-timelinejs)
@@ -28,7 +33,6 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ## About Me
 
 Servant of God masquerading as a DevOps Engineer Software Developer
-
 Personal Page Andres Leon Rangel Born in Colombia
 grew up in Socorro Santander, Colombia
 moved to Bogota, Colombia
@@ -38,6 +42,9 @@ God moved me to New Zealand 2017
 Adopted by Kiwis 2020
 
 ### Professional Profile
+Seasoned cloud engineer skilled in architecting secure, resilient cloud solutions on AWS, Azure, and GCP. Expert in migrating legacy systems and empowering high velocity software delivery.
+
+Deep expertise instrumenting cloud architecture with monitoring, logging, and automation to ensure reliability, availability and achieve operational excellence. Skilled at leveraging actionable metrics to drive continuous improvement. Passionate about empowering high velocity software delivery through technology, process optimization and a fail fast culture underpinned by a data-driven approach.
 
 Migrated from [PasteBin.com](https://pastebin.com/raw/K8qm2NqZ)
 
@@ -87,7 +94,13 @@ Docker makes it easy for you to test Jekyll Pages
 
 ## Build Jekyll Page
 
-build locally
+set the version before running the build locally
+
+there is this official [builder image](https://github.com/envygeeks/jekyll-docker#readme)
+
+```bash
+VERSION="3.8.6"
+```
 
 - Install Docker. [Docker installation instructions](https://docs.docker.com/get-docker/)
 - Go to the directory where you have the source code of the site
@@ -97,10 +110,18 @@ build locally
 docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" \
 	--env VERBOSE=true \
 	--env JEKYLL_ENV=production \
-	jekyll/jekyll:3.8 jekyll build
+	jekyll/jekyll:$VERSION jekyll build
 ```
 
-## Serve Page 
+### Bundler
+
+```bash
+docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+	--env JEKYLL_ENV=production \
+	jekyll/jekyll:$VERSION jekyll bundle install
+```
+
+## Serve Page
 
 locally :-)
 
